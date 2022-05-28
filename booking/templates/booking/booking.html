@@ -11,19 +11,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
- <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
 
     <!--Navigation bar-->
-    <nav class="navbar navbar-light bg-success">
-        <div .pt-5>
-            <h1 class="text-center mt-3 display-1"><a href="/" class="text-white">JM Clinic</a></h1>
-            <p class="my-auto mr-2 align-right"><i>Aiming to keep you well!</i></p>
-            <a href="/" class="navbar-nav mr-auto">HOME</a>
-            <a href="login" class="">Sign In /Sign Up</a>
-            <h3>appoint-Dr.</h3>
+
+    <div .pt-5>
+        <h1 class="text-left mt-3 display-1"><a href="/" class="text-decoration-none">JM Clinic</a>
+        </h1>
+        <p class="ml-auto mr-2"><i>Aiming to keep you well!</i></p>
+    </div>
+
+    <nav class="navbar navbar-light bg-info" style="--bs-text-opacity: .5;">
+        <div class>
+            <h3 mt-3>appoint-Dr.</h3>
+            <form class="container-fluid justify-content-start">
+                <button class="btn me-2 btn-outline-primary text-right" type="button">HOME</button>
+                <button class="btn me-2 btn-outline-success text-right" type="button">Sign In /Sign Up</button>
+            </form>
+
         </div>
     </nav>
 
@@ -36,13 +45,16 @@
                     <p class="lead mt-5"><strong>Book with our appoint-Dr. app for you and your family better
                             health!</strong></p>
                     <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-thin fa-stethoscope"></i></span>Manage your online appointments on your finger tip.</li>
+                        <li><span class="fa-li"><i class="fa-thin fa-stethoscope"></i></span>Manage your online
+                            appointments on your finger tip.</li>
                         <br>
 
-                        <li><span class="fa-li"><i class="fa-solid fa-stomach"></i></span>Easy to cancel and reschedule!</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-stomach"></i></span>Easy to cancel and reschedule!
+                        </li>
                         <br>
 
-                        <li><span class="fa-li"><i class="fa-solid fa-spinner fa-heart-pulse"></i></span>Get an email reminder a day before!</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-heart-pulse"></i></span>Get an email
+                            reminder a day before!</li>
                         <br>
                     </ul>
                     <button class="btn btn-info btn-lg">Book Now!</button>
@@ -55,84 +67,131 @@
         <section class="catalogue">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center mb-3"> Available Specialists</h2>
+                    <a href="/" class="navbar-brand">
+                        Available Specialists</a>
+                 <!--   <h2 class="text-center mb-5">Available Specialists</h2> -->
                 </div>
             </div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#contentDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+            <!--picture 1-->
             <div class="row">
-                <div class="col-12 col-lg-6 col-lg-4ç">
-                    <h4>Gastrology</h4>
-                    <div class="container">
-                        <div class="container">
-                            <div class="media">
-                                <img src="../images/booking.html" class="rounded mr-3" height=100 width=100>
-                            </div>
-                            <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-12 col-lg-6 col-lg-">
-                    <h4>Neurology</h4>
-                    <div class="container">
-                        <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3" height=100 width=100>
-                        </div>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h4 class="text-center">Gastroentrologist</h4>
+                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="col-12 col-lg-6 col-lg-">
+                        <div class="container">
 
+                        </div>
                     </div>
                 </div>
+                <div class="col-12 col-lg-6 col-lg-">
 
-                <div class="col-12 col-lg-6 col-lg-3">
-                    <h4>Pediatrician</h4>
                     <div class="container">
                         <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3" height=100 width=100>
+                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
+                                width=200>
+                            <p class="text-center">Dr. Yohannes Fufa</p>
                         </div>
-                        <p> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-
                     </div>
                 </div>
+            </div>
 
+<div class="collapse navbar-collapse" id="contentDropdown"></div>
+            <div class="row">
+                <div class="col-12 col-lg-6 col-lg-">
+                    <h4 class="text-center">Neurologist</h4>
+                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="col-12 col-lg-6 col-lg-">
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-lg-">
 
-                <div class="col-12 col-md-6 col-lg-6 col-lg-3">
-                    <h4>Psychiatry</h4>
                     <div class="container">
                         <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3" height=100 width=100>
+                            <img src="../images/booking.html" class="rounded mr-3 d-block mx-auto" height=200
+                                width=200>
+                            <p class="text-center">Dr. Yohannes Fufa</p>
                         </div>
-                        <p> orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-
                     </div>
-                    <button class="btn btn-info btn-lg">Read more and book now!</button>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 col-lg-">
+                    <h4 class="text-center">Gastroentrologist</h4>
+                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="col-12 col-lg-6 col-lg-">
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-lg-">
+                    <div class="container">
+                        <div class="media">
+                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
+                                width=200>
+                                <br>
+                            <p class="text-center">Dr. Yohannes Fufa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 col-lg-">
+                    <h4 class="text-center">Gastroentrologist</h4>
+                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <div class="col-12 col-lg-6 col-lg-">
+                        <div class="container">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-lg-">
+
+                    <div class="vstack gap-2 container">
+                        <div class="media">
+                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
+                                width=200>
+                            <p class="text-center">Dr. Yohannes Fufa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            <button class="btn btn-info btn-lg">Read more and book now!</button>
+            </div>
 
         </section>
 
-        <!--header -->
+
         <hr>
         <!-- footer -->
         <section>
-            <div class="row">
+            <div class="row bg-info">
                 <div class="col-12">
                     <p>Opening Hours</p>
                     <p>Address</p>
+                    <p>Social Medias</p>
                 </div>
             </div>
         </section>
 
         <!--/. footer-->
     </article>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    
 </body>
 
 </html>
