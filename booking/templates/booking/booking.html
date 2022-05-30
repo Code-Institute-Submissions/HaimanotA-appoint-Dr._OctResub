@@ -13,28 +13,32 @@
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
     <!--Navigation bar-->
 
-    <div .pt-5>
-        <h1 class="text-left mt-3 display-1"><a href="/" class="text-decoration-none">JM Clinic</a>
-        </h1>
-        <p class="ml-auto mr-2"><i>Aiming to keep you well!</i></p>
-    </div>
-
-    <nav class="navbar navbar-light bg-info" style="--bs-text-opacity: .5;">
-        <div class>
-            <h3 mt-3>appoint-Dr.</h3>
-            <form class="container-fluid justify-content-start">
-                <button class="btn me-2 btn-outline-primary text-right" type="button">HOME</button>
-                <button class="btn me-2 btn-outline-success text-right" type="button">Sign In /Sign Up</button>
-            </form>
-
+    <nav class="navbar navbar-default bg-danger">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand fs-1 fw-bold" href="#">
+                    <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top text-white">
+                    JM Specialized Clinic</a>
+                <p class="fs-3 mt-3"><i>Aiming to keep you well!</i></p>
+            </div>
         </div>
     </nav>
+    <a class="btn btn-primary container-fluid btn-lg d-block gap-2" href="#" role="button">
+        <p class="text-left">appoint-Dr.</p>
+        <button type="button" class="btn btn-outline-light text-uppercase">Home</button>
+        <button type="button" class="btn btn-outline-light text-uppercase">Sign Up</button>
+        <button type="button" class="btn btn-outline-light text-uppercase">Login</button>
+    </a>
 
 
     <!--Info section -->
@@ -44,6 +48,11 @@
                 <div class="col-12">
                     <p class="lead mt-5"><strong>Book with our appoint-Dr. app for you and your family better
                             health!</strong></p>
+                            
+
+
+
+
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fa-thin fa-stethoscope"></i></span>Manage your online
                             appointments on your finger tip.</li>
@@ -57,141 +66,39 @@
                             reminder a day before!</li>
                         <br>
                     </ul>
-                    <button class="btn btn-info btn-lg">Book Now!</button>
+                    <button class="btn btn-primary btn-lg">Book Now!</button>
                 </div>
             </div>
-            <div class="row">
+        
         </section>
 
-        <!--Choose -->
-        <section class="catalogue">
-            <div class="row">
-                <div class="col-12">
-                    <a href="/" class="navbar-brand">
-                        Available Specialists</a>
-                 <!--   <h2 class="text-center mb-5">Available Specialists</h2> -->
-                </div>
-            </div>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#contentDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-            <!--picture 1-->
-            <div class="row">
-                <div class="col-12 col-lg-6 col-lg-">
-                    <h4 class="text-center">Gastroentrologist</h4>
-                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="col-12 col-lg-6 col-lg-">
-                        <div class="container">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-lg-">
-
-                    <div class="container">
-                        <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
-                                width=200>
-                            <p class="text-center">Dr. Yohannes Fufa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<div class="collapse navbar-collapse" id="contentDropdown"></div>
-            <div class="row">
-                <div class="col-12 col-lg-6 col-lg-">
-                    <h4 class="text-center">Neurologist</h4>
-                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="col-12 col-lg-6 col-lg-">
-                        <div class="container">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-lg-">
-
-                    <div class="container">
-                        <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3 d-block mx-auto" height=200
-                                width=200>
-                            <p class="text-center">Dr. Yohannes Fufa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-lg-6 col-lg-">
-                    <h4 class="text-center">Gastroentrologist</h4>
-                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="col-12 col-lg-6 col-lg-">
-                        <div class="container">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-lg-">
-                    <div class="container">
-                        <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
-                                width=200>
-                                <br>
-                            <p class="text-center">Dr. Yohannes Fufa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-lg-6 col-lg-">
-                    <h4 class="text-center">Gastroentrologist</h4>
-                    <p> orem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
-                    <div class="col-12 col-lg-6 col-lg-">
-                        <div class="container">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-lg-">
-
-                    <div class="vstack gap-2 container">
-                        <div class="media">
-                            <img src="../images/booking.html" class="rounded mr-3  d-block mx-auto" height=200
-                                width=200>
-                            <p class="text-center">Dr. Yohannes Fufa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+<section>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo">Available
+            Specialists</button>
+        <div id="demo" class="collapse">
+            <button>Gastroentrologist</button>
+            <button>Neurologist</button>
+            <button>Pediatrician</button>
+            <button>Psychiatrist</button>
+            <button>Nephrologist</button>
+        
         </div>
-            <button class="btn btn-info btn-lg">Read more and book now!</button>
-            </div>
-
-        </section>
-
-
-        <hr>
+    </section>
         <!-- footer -->
-        <section>
-            <div class="row bg-info">
-                <div class="col-12">
-                    <p>Opening Hours</p>
-                    <p>Address</p>
-                    <p>Social Medias</p>
-                </div>
-            </div>
-        </section>
-
+        
         <!--/. footer-->
     </article>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
 </body>
 
 </html>
