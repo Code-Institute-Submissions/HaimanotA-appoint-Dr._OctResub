@@ -50,7 +50,6 @@ class Booking(models.Model):
         blank=True,
     )
 
-
     creation_date = models.DateTimeField(
         verbose_name=('Creation date'),
         auto_now_add=True,
