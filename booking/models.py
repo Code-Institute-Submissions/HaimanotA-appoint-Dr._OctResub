@@ -1,12 +1,26 @@
 from django.db import models
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
+
 # Create your models here.
 
 
 class Patient(models.Model):
-    name = models.CharField(max_length=50, null=False, blank=False)
-    booked = models.BooleanField(null=False, blank=False, default=False)
+    
+    forename = models.CharField(
+        verbose_name=('First name'),
+        max_length=30,
+        blank=False,
+        null=False,
+    )
 
-class Booking(models.Model):
+    surname = models.CharField(
+        verbose_name=('Last name'),
+        max_length=30,
+        blank=False,
+        null=False,
+    )
+
     gender = models.CharField(
         max_length=10,
         verbose_name=('Gender'),
@@ -14,7 +28,8 @@ class Booking(models.Model):
             ('mrs', 'Mrs'),
             ('mr', 'Mr'),
         ),
-        blank=True,
+        blank=False,
+        null=False,
     )
 
     title = models.CharField(
@@ -25,23 +40,15 @@ class Booking(models.Model):
             ('Prof', 'Prof.'),
         ),
         blank=True,
+        null=True,
     )
 
-    forename = models.CharField(
-        verbose_name=('First name'),
-        max_length=20,
-        blank=True,
-    )
-
-    surname = models.CharField(
-        verbose_name=('Last name'),
-        max_length=20,
-        blank=True,
-    )
+    booked = models.BooleanField(null=False, blank=False, default=False)
 
     email = models.EmailField(
         verbose_name=('Email'),
-        blank=True,
+        blank=False,
+        null=False,
     )
 
     phone = models.CharField(
@@ -50,6 +57,18 @@ class Booking(models.Model):
         blank=True,
     )
 
+    def __str__(self):
+        return f"{self.forename} {self.surname}"
+
+
+class Booking(models.Model):
+
+    patient = models.ForeignKey(
+        Patient, on_delete=models.CASCADE,
+        blank=False,
+        null=False
+    )
+    
     creation_date = models.DateTimeField(
         verbose_name=('Creation date'),
         auto_now_add=True,
@@ -60,4 +79,7 @@ class Booking(models.Model):
         verbose_name=('Booking ID'),
         blank=True,
     )
+
+    def __str__(self):
+        return f"{self.patient.forename} {self.patient.surname} - {self.booking_id}"
 

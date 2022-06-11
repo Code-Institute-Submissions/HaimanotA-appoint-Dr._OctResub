@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointDr./JM Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+    <!--Navigation bar-->
+
+    <nav class="navbar navbar-default bg-success">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand text-decoration-none fs-1 fw-bold text-white" href="#">
+                    <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="30"
+                        class="d-inline-block align-text-top text-white text-opacity-75">
+                    JM Specialized Clinic</a>
+                <p class="fs-3 mt-5 text-white text-center"><i>Aiming to keep you well!</i></p>
+            </div>
+        </div>
+
+        <a class="btn btn-primary container-fluid btn-lg d-block gap-2" href="#" role="button">
+            <p class="text-left">appoint-Dr.</p>
+            <button type="button" class="btn btn-outline-light text-uppercase">Home</button>
+            <button type="button" class="btn btn-outline-light text-uppercase">Sign Up</button>
+            <button type="button" class="btn btn-outline-light text-uppercase">Login</button>
+        </a>
+
+    </nav>
+
+    {% block content %}
+    {% endblock  %}
+    <!-- footer -->
+    
+    <footer class="card bg-primary row">
+        <div class="card-body bg-primary">
+            <div class="col-sm-4 text-center">Opening Hours</div>
+            <div class="col-sm-4 text-center">Address</div>
+            <div class="col-sm-4 text-center">Social Medias</div>
+
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- footer -->
+
+
+
+    <!-- <section>
+            <footer class="row container-fluid mt-5">
+                <div class="row container-fluid mt-5">
+                    <div class="col-sm-4 bg-primary text-center">Opening Hours</div>
+                    <div class="col-sm-4 bg-success text-center">Adress</div>
+
+                    <div class="col-sm-4 bg-primary text-center">Social Medias
+                        <ul class="list-inline social-links">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">Linkedin</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-instagram .text-dark" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-facebook .text-dark" aria-hidden="true"></i>
+                                    <span class="sr-only">Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </section>
+        </. footer-->
+
+
+
+</body>
+
+</html>
