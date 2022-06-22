@@ -1,3 +1,85 @@
 body {
-    background-color: tomato;
+    background-color: whitesmoke;
 }
+
+
+.one{
+ /** background-color:#FFCE54; **/
+  background-color:#206398;
+ /** background-color: grey; **/
+  font-size: 60px;
+}
+
+.logo{
+  font-size: 60px;
+  text-align: center;
+  margin-left: 60px;
+  letter-spacing: 5px;
+  /** text-shadow:2px 2px 5px #48CFAD; **/
+}
+
+.lead{
+  margin-left: 80px;
+}
+
+.two{
+    font-size: 30px;
+    background-color: #48CFAD;
+  }
+
+  .btn-home{
+   margin-left: 60px;
+   font-size: 20px;
+  }
+
+  .book-btn{
+    margin-right: 60px;
+    font-size: 30px;
+   }
+
+  .lead{
+    font-size: 26px;
+   }
+ 
+.info-section{
+  font-size: 20px;
+  font-style: oblique;
+  line-height:50px ;
+ }
+
+ .btn-two{
+  background-color: #48CFAD;
+ }
+
+
+ .footer-container{
+  margin-top: 30px;
+}
+
+
+.footer-1{
+   /** background-color:#FFCE54; **/
+    background-color:#206398;
+    padding-top:30px;
+    padding-bottom: 100px;
+}
+
+.footer-2{
+  /* background-color:#206398; */
+  background-color:#48CFAD;
+  padding-top: 30px;
+}
+
+.footer-3{
+  /* background-color:#FFCE54; */
+  background-color:#206398;
+  padding-top:30px; 
+}
+
+.social-links{
+ font-size: 60px;
+}
+
+.navbar-fixed-bottom{
+  font-size: 30px;
+ }

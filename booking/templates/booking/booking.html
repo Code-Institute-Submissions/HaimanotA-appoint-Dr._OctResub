@@ -1,40 +1,38 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content %}
 <!--Info section -->
 <article class="container">
     <section class="Info_section">
+        
         <div class="row">
             <div class="col-12">
-                <p class="lead mt-5 text-primary text-opacity-75"><strong>Book with our appoint-Dr. app for you and
-                        your family better
-                        health!</strong></p>
+                <p class="lead text-left mt-5 text-primary"><strong>Book with our appoint-Dr. app!</strong></p>
 
 
-                <div class="container">
+                <div class="container text-grey">
                     <div class="row">
-                        <div class="col-sm-6 vstack gap-1">
-                            <ul class="fa-ul fs-4">
-                                <li><span class="fa-li"><i class="fa-thin fa-stethoscope"></i></span>Manage your
-                                    online
-                                    appointments on your finger tip.</li>
+                        <div class="col-sm-6 vstack gap-2 info-section">
+                            <ul>
+                                <i class="fa-solid fa-stethoscope"></i>  Manage your
+                                online
+                                appointments at your fingertip.
                                 <br>
 
-                                <li><span class="fa-li"><i class="fa-solid fa-stomach"></i></span>Easy to cancel and
-                                    reschedule!
-                                </li>
+                                <i class="fa-solid fa-lungs"></i>  Easy to cancel and
+                                reschedule!
                                 <br>
 
-                                <li><span class="fa-li"><i class="fa-solid fa-heart-pulse"
-                                            aria-hidden="true"></i></span>Get an email
-                                    reminder a day before your appointment!</li>
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="false"></i>  Get an email
+                                    reminder a day before your appointment!
                                 <br>
+                                
                             </ul>
-                            <button class="btn btn-primary btn-lg">Book Now!</button>
-
-
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="collapse"
+                            <button type="button" class="btn btn-two text-uppercase btn-lg btn-outline-light">Book Now!</button>
+                  
+                        </div>
+                           <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample" aria-expanded="false"
                                 aria-controls="collapseExample">Available
                                 Specialists</button>
@@ -46,14 +44,16 @@
                                 <button style="width: 300px;">Nephrologist</button>
                             </div>
                         </div>
-
+                    -->
                         <div class="col-sm-6">
-
-                            <img src="../booking/images.doc1.jpeg" class="img-thumbnail" alt="..." width="400"
-                                height="400">
+                            <div class="image-container">
+                                <img class="top"
+                                    src="https://www.istockphoto.com/se/vektor/stethoscope-heart-gm530201551-54225786">
+                            </div>
                         </div>
-                    </div>
+                    
                 </div>
     </section>
 </article>
 {% endblock %}
+

@@ -2,11 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-# Create your models here.
-
 
 class Patient(models.Model):
-    
+    """Patient model - who made a reservation"""
     forename = models.CharField(
         verbose_name=('First name'),
         max_length=30,
@@ -62,7 +60,7 @@ class Patient(models.Model):
 
 
 class Booking(models.Model):
-
+    """Booking model - about the booking"""
     patient = models.ForeignKey(
         Patient, on_delete=models.CASCADE,
         blank=False,
@@ -82,4 +80,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.patient.forename} {self.patient.surname} - {self.booking_id}"
-
