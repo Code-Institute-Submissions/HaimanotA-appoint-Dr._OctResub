@@ -80,3 +80,39 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.patient.forename} {self.patient.surname} - {self.booking_id}"
+
+class Specialities(models.Model):
+    name = models.CharField(max_length=30, null=False, blank=False)
+    book = models.BooleanField(null=False, blank=False)
+
+    def __str__(self):
+        return self.name
+
+DAYS_OF_WEEK = (
+    (0, 'Monday'),
+    (1, 'Tuesday'),
+    (2, 'Wednesday'),
+    (3, 'Thursday'),
+    (4, 'Friday'),
+    (5, 'Saturday'),
+    (6, 'Sunday'),
+)
+
+
+class WeekDay(models.Model):
+    patient = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="weekday"
+    )
+    weekday = models.IntegerField(choices=DAYS_OF_WEEK)
+
+    
+class AvailableHour(models.Model):
+    weekday = models.ForeignKey(
+        WeekDay,
+        on_delete=models.CASCADE,
+        related_name="available_hour"
+    )
+    from_hour = models.TimeField()
+    to_hour = models.TimeField()

@@ -8,10 +8,10 @@
         
         <div class="row">
             <div class="col-12">
-                <p class="lead text-left mt-5 text-primary"><strong>Book with our appoint-Dr. app!</strong></p>
+                <p class="lead text-left mt-5"><strong>Book with our appoint-Dr. app!</strong></p>
 
 
-                <div class="container text-grey">
+                <div class="container">
                     <div class="row">
                         <div class="col-sm-6 vstack gap-2 info-section">
                             <ul>
@@ -29,9 +29,18 @@
                                 <br>
                                 
                             </ul>
-                            <button type="button" class="btn btn-two text-uppercase btn-lg btn-outline-light">Book Now!</button>
+                            <button type="button" class="btn btn-two text-uppercase btn-lg btn-outline-light"><a href="/base">Book Now!</a></button>
+                
+                    <table>
+                        {% for Specialities in bookings %}
+                            <tr>
+                                <td>{{ Specialities.name }}</td>
+                                <td>{{ Specialities.done }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
                   
-                        </div>
+                </div>
                            <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample" aria-expanded="false"
                                 aria-controls="collapseExample">Available
