@@ -79,7 +79,7 @@ class Booking(models.Model):
     )
 
     def __str__(self):
-        return f"{self.patient.forename} {self.patient.surname} - {self.booking_id}"
+        return f"{self.patientpatient.forename} {self.patient.surname} - {self.booking_id}"
 
 class Specialities(models.Model):
     name = models.CharField(max_length=30, null=False, blank=False)

@@ -7,8 +7,16 @@ from .models import Patient, Booking, Specialities
 
 def home_page(request):
     bookings = Booking.objects.all()
-    return render(request, 'booking/booking.html')
-
+    template = 'booking/booking.html'
+    context = {
+        'bookings': bookings,
+    }
+    return render(request, template, context)
+    
 def base(request):
     bookings = Booking.objects.all()
-    return render(request, 'booking/base.html')
+    template = 'booking/base.html'
+    context = {
+        'bookings': bookings,
+    }
+    return render(request, template, context)

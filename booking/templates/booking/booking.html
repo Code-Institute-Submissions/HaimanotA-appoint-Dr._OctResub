@@ -32,10 +32,17 @@
                             <button type="button" class="btn btn-two text-uppercase btn-lg btn-outline-light"><a href="/base">Book Now!</a></button>
                 
                     <table>
-                        {% for Specialities in bookings %}
+                        {% for booking in bookings %}
                             <tr>
-                                <td>{{ Specialities.name }}</td>
-                                <td>{{ Specialities.done }}</td>
+                                <td>{{ booking.patient.forename }}</td>
+                                <td>{{ booking.patient.surname }}</td>
+                                <td>{{ booking.creation_date }}</td>
+                                <td>{{ booking.booking_id }}</td>
+                                <td>{{ booking.patient.gender }}</td> 
+                                <td>{{ booking.patient.title }}</td>
+                                <td>{{ booking.patient.booked }}</td>
+                                <td>{{ booking.patient.email }}</td>
+                                <td>{{ booking.patient.phone }}</td>
                             </tr>
                         {% endfor %}
                     </table>
