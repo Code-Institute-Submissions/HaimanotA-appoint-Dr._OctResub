@@ -23,8 +23,8 @@ class Patient(models.Model):
         max_length=10,
         verbose_name=('Gender'),
         choices=(
-            ('mrs', 'Mrs'),
-            ('mr', 'Mr'),
+            ('Male','Male'),
+            ('Female','Female'),
         ),
         blank=False,
         null=False,
@@ -67,19 +67,33 @@ class Booking(models.Model):
         null=False
     )
     
-    creation_date = models.DateTimeField(
-        verbose_name=('Creation date'),
-        auto_now_add=True,
+    booking_date = models.DateField(
+        verbose_name=('booking date'),
+        null=True,
     )
 
-    booking_id = models.CharField(
+appointmenttime  = models.CharField(
+        max_length=20,
+        verbose_name=('Appointmenttime'),
+        choices=(
+            ('Morning-1', '8-9'),
+            ('Morning-2', '10-11'),
+            ('Afternoon-1', '10-11'),
+            ('Afternoon-2', '10-11'),
+        ),
+            blank=False,
+            null=True,
+    )
+
+
+booking_id = models.CharField(
         max_length=100,
         verbose_name=('Booking ID'),
         blank=True,
     )
 
-    def __str__(self):
-        return f"{self.patientpatient.forename} {self.patient.surname} - {self.booking_id}"
+def __str__(self):
+        return f"{self.booking_id} - {self.patient.forename} {self.patient.surname} {self.patient.gender} {self.creation_date}{self.appointmenttime}"
 
 class Specialities(models.Model):
     name = models.CharField(max_length=30, null=False, blank=False)
@@ -116,3 +130,4 @@ class AvailableHour(models.Model):
     )
     from_hour = models.TimeField()
     to_hour = models.TimeField()
+    
