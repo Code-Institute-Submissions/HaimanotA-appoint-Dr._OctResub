@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ patient_form.as_p }}
+    <button type="submit">Add Patient</button>
+</form>
+
+{% endblock %}

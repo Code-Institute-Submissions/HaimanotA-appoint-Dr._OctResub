@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 
 
 class Patient(models.Model):
@@ -61,6 +60,7 @@ class Patient(models.Model):
     def __str__(self):
         return f"{self.forename} {self.surname}"
 
+
 class Booking(models.Model):
     patient = models.ForeignKey(
         Patient, on_delete=models.CASCADE,
@@ -81,5 +81,5 @@ class Booking(models.Model):
 
 
 def __str__(self):
-        return f"{self.patient.surname}"
+    return f"{self.patient.surname}"
         

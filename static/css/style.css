@@ -49,8 +49,14 @@ body {
   color: #206398;
  }
 
+
  .btn-two{
   background-color: #48CFAD;
+  text-decoration: none 
+ }
+
+ .btn{
+ text-decoration: none;
  }
 
 
