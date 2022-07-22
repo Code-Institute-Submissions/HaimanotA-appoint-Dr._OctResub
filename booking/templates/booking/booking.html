@@ -34,33 +34,16 @@
                     <table>
                         {% for booking in bookings %}
                             <tr>
+                                <td>{{ booking.booking_id }}</td>
                                 <td>{{ booking.patient.forename }}</td>
                                 <td>{{ booking.patient.surname }}</td>
-                                <td>{{ booking.creation_date }}</td>
-                                <td>{{ booking.booking_id }}</td>
                                 <td>{{ booking.patient.gender }}</td> 
-                                <td>{{ booking.patient.title }}</td>
-                                <td>{{ booking.patient.booked }}</td>
-                                <td>{{ booking.patient.email }}</td>
-                                <td>{{ booking.patient.phone }}</td>
                             </tr>
                         {% endfor %}
                     </table>
                   
                 </div>
-                           <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false"
-                                aria-controls="collapseExample">Available
-                                Specialists</button>
-                            <div id="collapseExample" class="collapse text-center" style="width: 150px;">
-                                <button style="width: 300px;">Gastroentrologist</button>
-                                <button style="width: 300px;">Neurologist</button>
-                                <button style="width: 300px;">Pediatrician</button>
-                                <button style="width: 300px;">Psychiatrist</button>
-                                <button style="width: 300px;">Nephrologist</button>
-                            </div>
-                        </div>
-                    -->
+                           
                         <div class="col-sm-6">
                             <div class="image-container">
                                 <img class="top"
