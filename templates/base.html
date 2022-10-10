@@ -22,17 +22,18 @@
 
     <nav class="one navbar navbar-default">
         <a class="brand logo navbar-brand fw-bold text-white mx-auto" href="#">
-            <p> MY Clinic</p>
+            <p>appoint-Dr.</p>
         </a>
     </nav>
 
     <nav class="two navbar navbar-default">
-        <button type="button" class="btn btn-home btn-outline-light text-uppercase">Home</button>
-        <a class="book-btn navbar-brand fw-bold text-white" href="base">
-            appoint-Dr.</a>
+        <button type="button" class="btn btn-home btn-outline-light text-uppercase">
+            Home</button>
+        <!--  <a class="book-btn navbar-brand fw-bold text-white" href="base"> 
+            appoint-Dr.</a> -->
 
         <a class="book-btn navbar-brand fw-bold text-white" href="{% url 'account_signup' %}">
-                Sign Up</a>
+            Sign Up</a>
     </nav>
 
     {% block content %}
@@ -46,10 +47,10 @@
                 <p>Saturday- Sunday: 9.00 - 16:00 </p>
             </div>
             <div class="footer-2 col-sm-4 text-center text-capitalize">Address
-            <p>MY Clinic</p>
-            <p>Fyrbåksvägen 2</p>
-            <p>722 10 västerås</p>
-        </div>
+                <p>appoint-Dr.</p>
+                <p>Fyrbåksvägen 2</p>
+                <p>722 10 västerås</p>
+            </div>
             <div class="footer-3 col-sm-4 text-center text-capitalize">Social Medias
 
                 <ul class="list-inline social-links">
@@ -60,12 +61,15 @@
                         </a>
                     </li>
 
+                    <br>
+
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
                             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
+                    <br>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>

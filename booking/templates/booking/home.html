@@ -23,11 +23,12 @@
                                 reminder a day before your appointment!
                                 <br>
                             </ul>
-                            {% if user.is_authenticated %}
+
+                       
                             <a href="{% url 'add_patient' %}" class="btn btn-two text-uppercase btn-lg btn-outline-light">
                                 Book Now!
                             </a>
-                            {% endif %}
+                         
                         </div>
 
                                     <img src="{% static 'images/docpict1.jpeg' %}" alt="doctor picture">

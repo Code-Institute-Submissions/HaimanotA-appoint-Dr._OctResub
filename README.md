@@ -19,14 +19,14 @@ The Booking
 
 The Features
 
-The user can make a booking by clicking the ‘appoint-dr.’ button on the navigation bar or the ‘Book Now!’ button. 
+The user can make a booking by clicking the the ‘Book Now!’ or the ‘appoint-dr.’ button on the navigation bar. 
 
 Existing Features
 
 Technologies used
 This website is developed using HTML, CSS and JavaScript and Django programming languages. In addition the tools Gitpod, Github, Git and Heroku are used.
 * HTML is used to create the content of the webpage.
-* CSS  and bootstrap is used to style and specify the layout of the webpage.
+* CSS and bootstrap is used to style and specify the layout of the webpage.
 * Heroku APP which is a container-based cloud Platform is used to deploy, manage, and scale the project.
 * Gitpod is used as an editor to write and run the code.
 * Github is employed as code hosting platform, collaboration and securing our code against accidental or malicious loss.
@@ -43,10 +43,6 @@ Validator Testing
 * HTML Code Validation
     * No errors were found. Three warning messages were displayed when passing the official W3C validation tool. index.html
 
-
-
-
-
 Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 * In the GitHub repository, navigate to the Settings tab.
@@ -56,14 +52,5 @@ The live link can be found here.
 
 Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
-* git clone https://github.com/HaimanotA/quiztour.git
+* git clone https://github.com/HaimanotA/appoint-Dr..git
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
-￼
-Credits
-
-Media
-* The three images on the landing page are taken from Google Photos.
-Source Code
-* 
-
-Constraints

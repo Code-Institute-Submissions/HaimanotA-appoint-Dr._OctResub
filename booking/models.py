@@ -22,8 +22,8 @@ class Patient(models.Model):
         max_length=10,
         verbose_name=('Gender'),
         choices=(
-            ('Male','Male'),
-            ('Female','Female'),
+            ('Male', 'Male'),
+            ('Female', 'Female'),
         ),
         blank=False,
         null=False,
@@ -42,7 +42,7 @@ class Patient(models.Model):
         blank=True,
         null=True,
     )
-    
+        
     email = models.EmailField(   
         max_length=30,
         verbose_name=('Email'),
@@ -55,7 +55,6 @@ class Patient(models.Model):
         max_length=20,
         blank=True,
     )
-
 
     def __str__(self):
         return f"{self.forename} {self.surname}"
@@ -82,4 +81,3 @@ class Booking(models.Model):
 
 def __str__(self):
     return f"{self.patient.surname}"
-        

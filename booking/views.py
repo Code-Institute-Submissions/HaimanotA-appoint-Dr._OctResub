@@ -36,16 +36,16 @@ def add_patient(request):
 def create_patient(request):
     if request.method == "post":
         forename = request.POST.get("fname")
-        surname = request.POST.get("lname")
-         
+        surname = request.POST.get("lname")         
         patient.objects.create(forename=forename, surname=surname)
         return render(request, 'patient_booking/')
+
 
 def book_patient(request):
     if request.methtod == 'POST':
         form = BookingForm()
         context = {
-        'form': form
-    }
+         'form': form
+        }
 
-    return render(request, 'patient_booking/base.html', context)
+        return render(request, 'patient_booking/base.html', context)
