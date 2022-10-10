@@ -5,7 +5,7 @@ from .models import Booking, Patient
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['booking_date', 'booking_id']
+        fields = "__all__"
 
 
 class PatientForm(forms.ModelForm):

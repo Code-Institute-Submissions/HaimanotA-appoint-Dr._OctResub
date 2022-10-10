@@ -27,14 +27,40 @@
     </nav>
 
     <nav class="two navbar navbar-default">
-        <button type="button" class="btn btn-home btn-outline-light text-uppercase">
-            Home</button>
-        <!--  <a class="book-btn navbar-brand fw-bold text-white" href="base"> 
-            appoint-Dr.</a> -->
-
-        <a class="book-btn navbar-brand fw-bold text-white" href="{% url 'account_signup' %}">
-            Sign Up</a>
+       
+   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'home_page' %}">Home</a>
+    </li>
+            {% if user.is_authenticated %}
+            {% if user.is_superuser %}
+            <li class="nav-item">
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'add_patient' %}">Add patient</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_signup' %}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_login' %}">Login</a>
+            </li>
+            {% endif %}
+        </ul>
     </nav>
+    {% if messages %}
+    <section id="alerts">
+        {% for msg in messages %}
+            <!-- all django message tags mirror bootstrap, except error/danger -->
+            <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+                <h3>{{ msg }}</h3>
+            </aside>
+        {% endfor %}
+    </section>
+{% endif %}
 
     {% block content %}
     {% endblock  %}

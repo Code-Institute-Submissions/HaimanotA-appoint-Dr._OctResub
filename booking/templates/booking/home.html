@@ -24,11 +24,11 @@
                                 <br>
                             </ul>
 
-                       
-                            <a href="{% url 'add_patient' %}" class="btn btn-two text-uppercase btn-lg btn-outline-light">
+                            {% if user.is_authenticated %}
+                            <a href="{% url 'add_booking' %}" class="btn btn-two text-uppercase btn-lg btn-outline-light">
                                 Book Now!
                             </a>
-                         
+                        {% endif %}
                         </div>
 
                                     <img src="{% static 'images/docpict1.jpeg' %}" alt="doctor picture">
