@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>appointDr./JM Clinic</title>
+    <title>appointDr</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -18,35 +18,41 @@
 
 <body>
 
-    <!--Navigation bar-->
+    <!--Logo Header-->
 
     <nav class="one navbar navbar-default">
-        <a class="brand logo navbar-brand fw-bold text-white mx-auto" href="#">
-            <p>appoint-Dr.</p>
-        </a>
+        <p class="brand logo navbar-brand fw-bold text-white mx-auto"> appoint-Dr.</p>
     </nav>
 
-    <nav class="two navbar navbar-default">
-       
-   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-        <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'home_page' %}">Home</a>
-    </li>
+
+    <!--Navigation bar-->
+
+    <nav class="two navbar">
+        <ul class="navbar-nav mb-lg-0 d-flex flex-row">
+
+            <li class="nav-item">
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'home_page' %}">Home</a>
+            </li>
             {% if user.is_authenticated %}
             {% if user.is_superuser %}
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'add_patient' %}">Add patient</a>
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'add_patient' %}">Add
+                    patient</a>
             </li>
             {% endif %}
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_logout' %}">Logout</a>
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                    href="{% url 'account_logout' %}">Logout</a>
             </li>
+
             {% else %}
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_signup' %}">Register</a>
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                    href="{% url 'account_signup' %}">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'account_login' %}">Login</a>
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                    href="{% url 'account_login' %}">Signup / Signin </a>
             </li>
             {% endif %}
         </ul>
@@ -54,13 +60,15 @@
     {% if messages %}
     <section id="alerts">
         {% for msg in messages %}
-            <!-- all django message tags mirror bootstrap, except error/danger -->
-            <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
-                <h3>{{ msg }}</h3>
-            </aside>
+       
+        <aside
+            class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center"
+            role="alert">
+            <h3>{{ msg }}</h3>
+        </aside>
         {% endfor %}
     </section>
-{% endif %}
+    {% endif %}
 
     {% block content %}
     {% endblock  %}
@@ -85,6 +93,7 @@
                             <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
+                    <p>Facebook</p>
                     </li>
 
                     <br>

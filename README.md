@@ -1,19 +1,35 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Appoint-Dr Booking APP
+Appoint-Dr 
 
-Appoint-Dr. is a booking app whiich is created for health care facilities like clinics to enable their customers to make bookings online. MY Clinic is a specialized clinic which is using the Appoint-Dr. app for its booking. 
-
-Using this app, customers/patients can make booking by signing in/up to the website.
+Appoint-Dr. is a booking app that is created for healthcare facilities like clinics and hospitals to enable their customers to make their bookings online. Using this app, customers/patients can make booking by signing in/up to the website.
 
 
-The Design 
+### Features 
+
+Each page has its own functions. 
+HOME
+The Home page when clicked from any page will redirect the page to the home page. 
+
+Add patient 
+enables doctors/admins to register their patients. 
+The Add patient form contains First name, Last name, Gender, title, email and phone number. Once they finished filling out the form the can click the button 'Make a booking!' and they can see the booked patient in the admin page.  
+
+Signin / Signup
+
+The patient need to signup first to make a booking. Once they signed up they need be logged in and once they have successfully registered themselves they can make a booking by clicking the 'Book Now' button.
+
+Logout 
+The user needs to logout once they are done with the booking. 
+
+Book Now!
+
+The book now button will be visible once the user is logged in. The user can book by clicking this button. 
+
+### The Design 
 
 Design Prototype 
 
-What does each page do?
-
-The Home page
 
 The Booking                                                               
 
