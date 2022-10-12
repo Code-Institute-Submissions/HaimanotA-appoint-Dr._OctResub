@@ -13,18 +13,18 @@ class Patient(models.Model):
         null=False,
     )
 
-    booking_id = models.CharField(
-        max_length=6,
-        verbose_name=('Booking Id'),
-        blank=False,
-     )
-
     surname = models.CharField(
         verbose_name=('Last name'),
         max_length=30,
         blank=False,
         null=False,
     )
+
+    booking_id = models.CharField(
+        max_length=6,
+        verbose_name=('Booking Id'),
+        blank=False,
+     )
 
     gender = models.CharField(
         max_length=10,

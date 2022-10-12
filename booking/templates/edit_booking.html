@@ -9,10 +9,17 @@
     <button type="submit">Make a Booking!</button>
 
 </form>
-
+<h1>Edit your booking</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
 <a href="/edit/{{ Booking.id }}">
+    <div>
+        <p>
     <button>Edit</button>
+</p>
 </a>
-
+</div>
+</form>
 {% csrf_token %}
 {% endblock %}

@@ -26,6 +26,10 @@ Book Now!
 
 The book now button will be visible once the user is logged in. The user can book by clicking this button. 
 
+The admin page
+Only the admin can login to this page by using his user name and password.
+After logged in the admin can create, re , delete the bookings and in addition he/she can see the booked appointments.
+
 ### The Design 
 
 Design Prototype 

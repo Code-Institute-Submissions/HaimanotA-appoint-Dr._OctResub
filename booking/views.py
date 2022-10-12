@@ -4,6 +4,7 @@ from django.contrib import messages
 from .models import Patient, Booking
 from .forms import BookingForm, PatientForm
 
+
 # Create your views here.
 
 
@@ -19,7 +20,7 @@ def add_patient(request):
         if patient_form.is_valid():
             patient_form.save()
             messages.success(request, 'patient addded successfully!')
-            return redirect(home_page)
+            return redirect(add_patient)
     template = "booking/new_patient.html"
     context = {
         "patient_form": patient_form,
@@ -39,3 +40,8 @@ def add_booking(request):
         "booking_form": booking_form,
     }
     return render(request, template, context)
+
+
+def edit_booking(request, Booking_id):
+    return render(request, 'booking/edit_booking.html')
+    
