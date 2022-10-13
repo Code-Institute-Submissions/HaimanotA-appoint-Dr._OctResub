@@ -1,9 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 # The class patient will enable the admin to register patients!
-
-
 class Patient(models.Model):
     """Patient model - who made a reservation"""
     forename = models.CharField(
@@ -50,7 +49,7 @@ class Patient(models.Model):
         blank=True,
         null=True,
     )
-            
+
     email = models.EmailField(   
         max_length=30,
         verbose_name=('Email'),
@@ -65,14 +64,12 @@ class Patient(models.Model):
     )
 
     registered = models.BooleanField(null=False, blank=False, default=False)
-    
 
-def __str__(self):
-    return f"{self.forename} {self.surname}"
+    def __str__(self):
+        return f"{self.forename} {self.surname}"
+
 
 # The class Booking will enable the patient to make a booking!
-
-
 class Booking(models.Model):
     patient = models.ForeignKey(
         Patient, on_delete=models.CASCADE,
@@ -92,6 +89,5 @@ class Booking(models.Model):
 
     booked = models.BooleanField(null=False, blank=False, default=False)
 
-
-def __str__(self):
-    return f"{self.patient.surname}"
+    def __str__(self):
+        return self.patient.surname
