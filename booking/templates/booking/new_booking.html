@@ -9,17 +9,4 @@
     <button type="submit">Make a Booking!</button>
 
 </form>
-
-<a href="/edit/{{ Booking.id }}">
-    <button>Edit</button>
-</a>
-
-<a href="/toggle/{{ Booking.id }}">
-    <button>Toggle</button>
-</a>
-
-<a href="/delete/{{ Booking.id }}">
-    <button>Delete</button>
-</a>
-{% csrf_token %}
 {% endblock %}
