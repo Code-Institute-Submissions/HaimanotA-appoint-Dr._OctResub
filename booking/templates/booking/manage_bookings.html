@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h3>Manage Bookings</h3>
+
+<ul>
+    {% for booking in bookings %}
+    <li>
+        Patient: {{ booking.patient.forename }} {{ booking.patient.surname }}
+        <br>
+        Booking Date: {{ booking.booking_date }}
+        <br>
+        Booking Time: {{ booking.booking_time }}
+        <br>
+        Confirmed? {{ booking.booked }}
+        <br>
+        {% if request.user.is_superuser %}
+            <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
+            <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger">Delete</a>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
