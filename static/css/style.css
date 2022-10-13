@@ -32,7 +32,6 @@ body {
   color: #206398;
  }
 
-
  .btn-two{
   background-color: #48CFAD;
   text-decoration: none 
@@ -41,7 +40,6 @@ body {
  .footer-container{
   margin-top: 30px;
 }
-
 
 .footer-1{
     background-color:#206398;
@@ -72,3 +70,9 @@ margin-top: 300px;
 margin-right: 100px;
  }
 
+.signup{
+margin-top: 300px;
+margin-right: 100px;
+margin-left: 200px;
+padding: 300px;
+ }

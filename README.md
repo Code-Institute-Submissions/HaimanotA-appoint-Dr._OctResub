@@ -1,11 +1,55 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Appoint-Dr 
 
-Appoint-Dr 
+Appoint-Dr. is a booking app that is designed for different healthcare facilities like hospitals, clinics and health center. 
+The facilities can use this app in order to enable their patients to make bookings online. 
+The site will serve anyone who is seeking for a medical care. 
 
-Appoint-Dr. is a booking app that is created for healthcare facilities like clinics and hospitals to enable their customers to make their bookings online. Using this app, customers/patients can make booking by signing in/up to the website.
+The app will be useful for patients as they can make their booking easily any time. Editing and deleting bookings is also possible.
+The health care facilities can benefit from this app since the admin can make a booking online if the patient doesnt waant to do it.
+Plus they can see the databases of their booked customers and this app can reduce cost for the facilities.
+
+![Responsice Mockup](static/images/.png)
 
 
-### Features 
+## Features 
+
+### Existing Features
+
+- __the logo__
+
+The 'appoint-Dr. logo located on the top center of the page indicates clearly to customers 
+about the service they can get from the website. 
+
+![Logo_header](static/images/logo.png)
+
+
+- __Navigation Bar__
+
+- Featured on all the pages, the responsive navigation bar is identical in each page to enable easy navigation. 
+- The user can easily navigate to the sections needed without touching the 'back' button.
+
+The navigation bar displays two different bars depending on the user status. 
+ Before making a booking the navigation bar shows the links to Home, Register and Signin. 
+ The user need to sign in / sign up first to make a booking.
+
+![Logo_header](static/images/nav1.png)
+
+After the user sign up/ signed in the user is redirected to the page whre he/she can make a booking. 
+A message will be displayed on the home page to inform the user that he/she has successfully signed in. 
+The nav bar now show Home, Add Boopking, Manage Bookings and Logout. 
+The user now have two options to make the booking he can click the Add Booking button 
+or the Book Now button to make the bookings.
+
+![Logo_header](static/images/nav2.png)
+
+- The add booking button will take the user to another page where he can fill a form
+The form contains patient name, Booking Date, Booking time, after filling out this information
+the user is expected to click the Make a Booking button. Then the user will be redirected
+to the home page and will be notified that the booking is added successfully. 
+
+
+![Logo_header](static/images/booking_success.png)
+
 
 Each page has its own functions. 
 HOME
@@ -25,45 +69,44 @@ The user needs to logout once they are done with the booking.
 Book Now!
 
 The book now button will be visible once the user is logged in. The user can book by clicking this button. 
+.
 
-The admin page
+- __The siignup/sign in__ 
+
+- __The Footer__ 
+
+ - The footer section includes information like opening hours, links to the relevant social media sites, and address of the health facility for the patients. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it gives them important information regarding the physical address and 
+  opening hours. 
+
+  - __The admin Page__
+
 Only the admin can login to this page by using his user name and password.
-After logged in the admin can create, re , delete the bookings and in addition he/she can see the booked appointments.
-
-### The Design 
-
-Design Prototype 
+After logged in the admin can create, read and delete the bookings. 
 
 
-The Booking                                                               
+### Features Left to Implement
 
-The Features
+_
 
-The user can make a booking by clicking the the ‘Book Now!’ or the ‘appoint-dr.’ button on the navigation bar. 
+## Testing 
 
-Existing Features
+Automated tests are made to ensure the applicatiion is working as expected. 
+Tests are made on models, views and urls files and it has passed without errors. 
 
-Technologies used
-This website is developed using HTML, CSS and JavaScript and Django programming languages. In addition the tools Gitpod, Github, Git and Heroku are used.
+## Technologies used
+
+This website is developed using HTML, CSS, Bootstrap, JavaScript and Django programming languages. In addition the tools Gitpod, Github, Git and Heroku are used.
 * HTML is used to create the content of the webpage.
-* CSS and bootstrap is used to style and specify the layout of the webpage.
+* CSS and Bootsrap are used to style and specify and make the layout of the webpage responsive.
 * Heroku APP which is a container-based cloud Platform is used to deploy, manage, and scale the project.
 * Gitpod is used as an editor to write and run the code.
 * Github is employed as code hosting platform, collaboration and securing our code against accidental or malicious loss.
 * Git is applied as a version control.
 
-Features left to implement
-* 
 
-Testing
-* The page is responsive and maintains its integrity when viewed on different screen sizes.
-* The page is tested on various browsers such as Microsoft edge, Google Chrome, and safari and it works perfectly.
+## Deployment
 
-Validator Testing
-* HTML Code Validation
-    * No errors were found. Three warning messages were displayed when passing the official W3C validation tool. index.html
-
-Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 * In the GitHub repository, navigate to the Settings tab.
 * From the source section drop-down menu, select the Main Branch, then click "Save".
@@ -74,3 +117,14 @@ Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 * git clone https://github.com/HaimanotA/appoint-Dr..git
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+
+## Credits 
+
+### Media
+
+- The photo on the home are from google photos.
+
+
+
