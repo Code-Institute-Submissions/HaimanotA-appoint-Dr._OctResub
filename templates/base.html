@@ -34,26 +34,34 @@
                 <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'home_page' %}">Home</a>
             </li>
             {% if user.is_authenticated %}
-            {% if user.is_superuser %}
-            <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'add_patient' %}">Add
-                    patient</a>
-            </li>
-            {% endif %}
-            <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
-                    href="{% url 'account_logout' %}">Logout</a>
-            </li>
+                {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-home btn-outline-light text-uppercase" href="{% url 'add_patient' %}">Add
+                            patient</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                        href="{% url 'add_booking' %}">Add Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                        href="{% url 'manage_bookings' %}">Manage Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                        href="{% url 'account_logout' %}">Logout</a>
+                </li>
 
             {% else %}
-            <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
-                    href="{% url 'account_signup' %}">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase"
-                    href="{% url 'account_login' %}">Signup / Signin </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                        href="{% url 'account_signup' %}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-home btn-outline-light text-uppercase"
+                        href="{% url 'account_login' %}">Signin</a>
+                </li>
             {% endif %}
         </ul>
     </nav>
