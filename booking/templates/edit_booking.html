@@ -13,12 +13,12 @@
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-<a href="/edit/{{ Booking.id }}">
+
     <div>
         <p>
-    <button>Edit</button>
+    <button type="submit">Update Booking</button>
 </p>
-</a>
+
 </div>
 </form>
 {% csrf_token %}

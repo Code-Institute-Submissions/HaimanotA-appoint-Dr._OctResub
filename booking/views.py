@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from django.contrib import messages 
 from .models import Patient, Booking
@@ -43,5 +43,27 @@ def add_booking(request):
 
 
 def edit_booking(request, Booking_id):
-    return render(request, 'booking/edit_booking.html')
-    
+    booking = get_object_or_404(Booking)
+    if request.method == "POST":
+       if booking_form.is_valid():
+        booking_form.save()
+        messages.success(request, 'booking edited successfully!')
+    return redirect(home_page)
+    template = "booking/new_booking.html"
+    context = {
+        "booking_form": booking_form
+    }
+    return render(request, 'booking/edit_booking.html', context)
+
+
+def toggle_booking(request, toggle_id):
+        booking = get_object_or_404(Booking, id=booking_id)
+        booking.done = not booking.done
+        booking.save()
+        return redirect('add_patient')
+
+
+def delete_booking(request, toggle_id):
+        booking = get_object_or_404(Booking, id=booking_id)
+        booking.delete()
+        return redirect('add_patient')

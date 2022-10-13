@@ -67,8 +67,8 @@ class Patient(models.Model):
     registered = models.BooleanField(null=False, blank=False, default=False)
     
 
-    def __str__(self):
-        return f"{self.forename} {self.surname}"
+def __str__(self):
+    return f"{self.forename} {self.surname}"
 
 # The class Booking will enable the patient to make a booking!
 
