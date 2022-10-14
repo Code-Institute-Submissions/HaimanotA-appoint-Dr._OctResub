@@ -27,21 +27,24 @@
 
     <!--Navigation bar-->
 
-    <nav class="two navbar justify-content-center">
-        <ul class="navbar-nav mb-lg-0 d-flex flex-row">
+    <nav class="two navbar justify-content-center row-cols-2">
+        <ul class="navbar-nav mb-lg-0 d-flex flex-row>
 
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white" href="{% url 'home_page' %}">Home</a>
+            <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white"
+                href="{% url 'home_page' %}">Home</a>
             </li>
             {% if user.is_authenticated %}
             {% if user.is_superuser %}
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white" href="{% url 'add_patient' %}">Add
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white"
+                    href="{% url 'add_patient' %}">Add
                     patient</a>
             </li>
             {% endif %}
             <li class="nav-item">
-                <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white" href="{% url 'add_booking' %}">Add
+                <a class="nav-link btn btn-home btn-outline-light text-uppercase text-white"
+                    href="{% url 'add_booking' %}">Add
                     Booking</a>
             </li>
             <li class="nav-item">
@@ -84,32 +87,33 @@
     <!-- footer -->
     <footer class="container-fluid footer-container">
         <div class="row  navbar-fixed-bottom text-white">
-            <div class="footer-1 col-sm-4 text-center text-capitalize">
-                <p class="display-5">Opening Hours</p>
-                <p>Monday - Friday: 8:00 - 17:00</p>
-                <p>Saturday- Sunday: 9.00 - 16:00 </p>
+            <div class="footer-1 col-sm-4 text-center">
+                <h2 class="text-uppercase">Our Speialities</h2>
+                <p>Internal Medicine</p>
+                <p>Gastroentrology</p>
+                <p>Psychiatry</p>
             </div>
-            <div class="footer-2 col-sm-4 text-center display-5">
-                <p>Social Medias</p>
-                <a target="_blank" href="#">
-                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            <div class="footer-2 col-sm-4 text-center">
+                <h2 class="text-uppercase">Social Medias</h2>
+                <a target="_blank" href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook social-links" aria-hidden="true"></i>
                     <span class="sr-only">Facebook</span>
                 </a>
-    <br> 
-                
-                <a target="_blank" href="#">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <br>
+
+                <a target="_blank" href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram social-links" aria-hidden="true"></i>
                     <span class="sr-only">Instagram</span>
                 </a>
                 <br>
-                <a target="_blank" href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <a target="_blank" href="https://www.linkedin.com/">
+                    <i class="fa fa-linkedin social-links" aria-hidden="true"></i>
                     <span class="sr-only">Linkedin</span>
                 </a>
 
             </div>
-            <div class="footer-3 col-sm-4 text-center text-capitalize">
-                <p class="display-5">Address</p>
+            <div class="footer-3 col-sm-4 text-center">
+                <h2 class="text-uppercase">Address</h2>
                 <p>appoint-Dr.</p>
                 <p>Fyrbåksvägen 2</p>
                 <p>722 10 västerås</p>
@@ -120,3 +124,4 @@
 </body>
 
 </html>
+
